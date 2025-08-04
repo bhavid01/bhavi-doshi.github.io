@@ -4,15 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Bhavi Doshi | Growth & Marketing Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles/main.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-<!-- animated pastel blobs background -->
 <canvas id="bg"></canvas>
 
-<!-- sticky top-nav (appears after scroll) -->
 <header id="topnav">
   <nav>
     <a href="#about">About</a>
@@ -22,7 +21,6 @@
   </nav>
 </header>
 
-<!-- HERO -->
 <section id="hero">
   <img src="assets/blob1.png" class="blob float" alt="">
   <div class="hero-inner">
@@ -33,34 +31,30 @@
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
  <div class="container about-content">
   <img src="assets/avatar.png" class="avatar" alt="Avatar">
   <div>
    <h2>About Me</h2>
-   <p>Marketer, product-ops nerd and storyteller. 5 yrs scaling SaaS + D2C revenue,
-   5× ROAS and 15 % retention lifts across 12 markets. Obsessed with culture,
-   data and delightful CX.</p>
+   <p>Marketer, product-ops nerd and storyteller. 5+ yrs scaling SaaS &amp; D2C
+   revenue, 5× ROAS, and +15 % retention lifts across 12 markets.</p>
   </div>
  </div>
 </section>
 
-<!-- TIMELINE -->
 <section id="profile">
  <div class="container timeline">
   <h2>My Journey</h2>
   <ul>
-   <li><span class="dot"></span><div><strong>2024 – 25</strong> Medtronic GCC – GTM & Employer Branding Lead</div></li>
-   <li><span class="dot"></span><div><strong>2021 – 24</strong> Netcore Cloud – Growth & Product Ops</div></li>
-   <li><span class="dot"></span><div><strong>2021</strong> Thor Solutions – Content Marketing</div></li>
-   <li><span class="dot"></span><div><strong>MBA, MICA</strong> (2018-20)</div></li>
-   <li><span class="dot"></span><div><strong>BCA, MAKAUT</strong> (2014-17)</div></li>
+    <li><span class="dot"></span><div><strong>Aug 24 – Jan 25</strong> Medtronic GCC – GTM Lead</div></li>
+    <li><span class="dot"></span><div><strong>Oct 21 – Mar 24</strong> Netcore Cloud – Growth &amp; Product Ops</div></li>
+    <li><span class="dot"></span><div><strong>Apr – Oct 21</strong> Thor Solutions – Content Marketing</div></li>
+    <li><span class="dot"></span><div><strong>MBA, MICA</strong> (2018–20)</div></li>
+    <li><span class="dot"></span><div><strong>BCA, MAKAUT</strong> (2014–17)</div></li>
   </ul>
  </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
  <div class="container">
   <h2>Skills</h2>
@@ -70,43 +64,41 @@
    <div class="skill-badge">Lifecycle Automation</div>
    <div class="skill-badge">Performance Ads</div>
    <div class="skill-badge">HubSpot CRM</div>
-   <div class="skill-badge">SQL & GA4</div>
+   <div class="skill-badge">SQL &amp; GA4</div>
   </div>
  </div>
 </section>
 
-<!-- WORK TABS -->
 <section id="projects">
  <div class="container">
   <h2>Work</h2>
   <div class="tab-buttons">
-   <button class="tab active" data-tab="featured">Featured</button>
-   <button class="tab" data-tab="culture">Culture & Identity</button>
-   <button class="tab" data-tab="d2c">D2C + FMCG</button>
-   <button class="tab" data-tab="product">Product Thinking</button>
-   <button class="tab" data-tab="saas">SaaS + MarTech</button>
+    <button class="tab active" data-tab="featured">Featured</button>
+    <button class="tab" data-tab="culture">Culture &amp; Identity</button>
+    <button class="tab" data-tab="d2c">D2C&nbsp;+&nbsp;FMCG</button>
+    <button class="tab" data-tab="product">Product&nbsp;Thinking</button>
+    <button class="tab" data-tab="saas">SaaS&nbsp;+&nbsp;MarTech</button>
   </div>
 
-  <!-- grids rendered by JS -->
   <div class="projects-grid" data-tab-content="featured"></div>
-  <div class="projects-grid" data-tab-content="culture" style="display:none"></div>
-  <div class="projects-grid" data-tab-content="d2c" style="display:none"></div>
-  <div class="projects-grid" data-tab-content="product" style="display:none"></div>
-  <div class="projects-grid" data-tab-content="saas" style="display:none"></div>
+  <div class="projects-grid" data-tab-content="culture"  style="display:none"></div>
+  <div class="projects-grid" data-tab-content="d2c"      style="display:none"></div>
+  <div class="projects-grid" data-tab-content="product"  style="display:none"></div>
+  <div class="projects-grid" data-tab-content="saas"     style="display:none"></div>
  </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
  <div class="container contact-wrapper">
   <h2>Let’s Connect</h2>
   <a href="mailto:hello@example.com" class="cta">Email me</a>
-  <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+  <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-link">
+    <i class="fa-brands fa-linkedin-in"></i>
+  </a>
   <p class="copy">© 2025 Bhavi Doshi</p>
  </div>
 </section>
 
-<!-- Skill Modal -->
 <dialog id="skillModal">
  <button class="close" aria-label="Close">&times;</button>
  <h3 id="skillTitle"></h3>
