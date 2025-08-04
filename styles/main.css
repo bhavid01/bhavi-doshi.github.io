@@ -339,3 +339,26 @@ section {
     display: block;
   }
 }
+/* pastel animated bg */
+#bg{position:fixed;inset:0;z-index:-3;}
+@keyframes shift{0%{background-position:0 0;}50%{background-position:100% 100%;}100%{background-position:0 0;}}
+#bg{background:
+  radial-gradient(at 25% 25%, #ffcdf2 0%, transparent 60%),
+  radial-gradient(at 75% 75%, #c3f5ff 0%, transparent 60%);
+  background-size:200% 200%;animation:shift 16s ease-in-out infinite;
+}
+/* hero blob float */
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+.blob.float{animation:float 5s ease-in-out infinite;}
+
+/* sticky nav */
+#topnav{position:fixed;top:-70px;left:0;right:0;padding:.5rem 1rem;
+  background:rgba(255,255,255,.6);backdrop-filter:blur(8px);
+  display:flex;justify-content:center;gap:1.5rem;transition:top .4s ease;z-index:2000;}
+#topnav a{font-weight:500;color:#333;text-decoration:none;}
+/* show nav after scroll */
+window.addEventListener('scroll',()=>{topnav.style.top=window.scrollY>400?'0':'-70px'});
+
+/* CTA arrow bounce */
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
+.cta .arrow{animation:bounce 1.4s infinite;}
